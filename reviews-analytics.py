@@ -25,10 +25,15 @@ for d in data:
 		new.append(d)
 print('一共有', len(new), '筆留言長度小於30')
 
+
 #練習篩選某關鍵字在留言
 word = []
 for d in data:
 	if 'if' in d:
 		word.append(d)
 print('共有', len(word), '筆留言提到if')
-print(word[1])
+print(word[0])
+
+#練習快寫法 留言中有if字眼的
+www = ['if'in d for d in data]
+print(www)
